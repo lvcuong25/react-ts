@@ -3,5 +3,10 @@ export interface IProduct{
     name:string;
     price:number;
     image?:string;
-    description?:string
+    description?:string;
+    categoryID?:string|number;
+    rating?: number;
+    stock?: number;
+    brand?: string;
+    discountPercentage: number;
 }

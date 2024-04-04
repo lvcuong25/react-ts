@@ -1,4 +1,4 @@
-import Banner from "../components/Banner"
+import Banner from "../home/Banner"
 
 
 const Articles = () => {

@@ -1,9 +1,8 @@
-import Banner from "../components/Banner";
-import Blog from "../components/Blog";
-import Products from "../components/Products";
-import Service from "../components/Service";
-import Shop from "../components/Shop";
-// import Service from "../components/service";
+import Banner from "../home/Banner";
+import Blog from "../home/Blog";
+import Service from "../home/Service";
+import Shop from "../home/Shop";
+import Products from "../home/product/Products";
 
 
 const HomePages = () => {

@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom"
-import HeaderAdmin from "../components/HeaderAdmin"
-import FooterAdmin from "../components/FooterAdmin"
+import HeaderAdmin from "../components/admin/HeaderAdmin"
+
 // import '../assets/dashboard.css'
 const DashboardAdmin = () => {
   return (
@@ -9,7 +9,7 @@ const DashboardAdmin = () => {
   
     <HeaderAdmin/>
     <Outlet/>
-    <FooterAdmin/>
+
 
     </div>
   )

@@ -161,6 +161,7 @@ img {
     &-info {
         padding: 15px;
         background: #f4f5f7;
+        height: 130px;
     }
     &__name {
         font-size: 24px;
@@ -338,3 +339,274 @@ img {
 .section-blog-heading {
     margin-bottom: 66px;
 }
+.banner {
+    background-image: url("https://picsum.photos/id/10/1440/500");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .banner-item {
+    position: absolute;
+    background: #f9f1e7;
+    top: 390px;
+    width: 100%;
+  }
+  
+  .banner-item-menu {
+    display: flex;
+  }
+  
+  .banner-item-menu-icon {
+    display: flex;
+    gap: 30px;
+  
+    span {
+      font-size: 20px;
+      line-height: 30px;
+      align-items: center;
+      display: flex;
+    }
+  }
+  
+  .banner-nav {
+    padding: 29px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .showing {
+    border-left: 2px solid #9f9f9f;
+    margin: 10px 0;
+  }
+  
+  .banner-item-form {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: end;
+    font-size: 20px;
+  }
+  
+  .form-menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .banner-item-form input {
+    padding: 10px 0;
+    border: none;
+    margin-left: 20px;
+    text-align: center;
+  }
+  
+  .show-input {
+    width: 55px;
+    height: 55px;
+  }
+  
+  .shortby-input {
+    height: 55px;
+  }
+
+
+
+  .main-action-bar {
+    background-color: #F9F1E7;
+
+    &_inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &_left {
+            padding: 32px 0px;
+
+            img {
+                vertical-align: bottom;
+            }
+
+            display: flex;
+            gap: 25px;
+            align-items: center;
+            justify-content: center;
+
+            &_filter {
+                display: flex;
+                gap: 21px;
+                align-items: center;
+
+                span {
+                    font-weight: 400;
+                    font-size: 1.6rem;
+                    color: #9F9F9F;
+                }
+            }
+
+            &_showing {
+                display: flex;
+                align-items: center;
+                border-left: 2px solid #9F9F9F;
+                font-size: 1.6rem;
+
+                span {
+                    padding-left: 24px;
+                }
+            }
+        }
+    }
+}
+
+.product-detail {
+    margin-top: 32px;
+    padding-bottom: 56px;
+    &_inner{
+        display: flex;
+        gap: 105px;
+    }
+    &_media{
+        display: flex;
+        gap: 31px;
+        &_slide{
+            
+            img{
+                vertical-align: bottom;
+            }
+        }
+        &_thumbnail{
+            &__bg{
+                background-color: #F9F1E7;
+                z-index: 0;
+                width: 423px;
+                height: 500px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                img{
+                    vertical-align: bottom;
+                    transform: translateX(-7px);
+                }
+            }
+        }
+    }
+    &_content{
+            // Nội dung chi tiết sản phẩm
+    }
+}
+.detail_content_action__addcart {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  button {
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 500;
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  button:first-child {
+    background-color: #B88E2F;
+  }
+
+  button:last-child {
+    background-color: #000;
+  }
+
+  button:hover {
+    transform: translateY(-3px);
+  }
+
+  button:hover:first-child {
+    background-color: #D1A04F;
+  }
+
+  button:hover:last-child {
+    background-color: #333;
+  }
+}
+.detail_content_action__number {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  span {
+    font-size: 1.6rem;
+    color: #000;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: #F9F1E7;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  span:hover {
+    background-color: #B88E2F;
+    color: #fff;
+  }
+}
+
+.detail_content_action {
+    display: flex;
+    flex-direction: column;
+  
+    .detail_content_action__number {
+      margin-bottom: 16px; /* Khoảng cách giữa số và các nút */
+      /* Các CSS khác */
+    }
+  
+    .detail_content_action__addcart {
+      margin-top: 16px; /* Khoảng cách giữa các nút */
+      /* Các CSS khác */
+    }
+  }
+  
+.product-description{
+    padding: 48px 0px 65px 0px;
+    border-top: 1px solid #D9D9D9;
+    border-bottom: 1px solid #D9D9D9;
+    margin-top: 11px;
+    &_title{
+        display: flex;
+        justify-content: center;
+        gap: 52px;
+        align-items: center;
+        .active{
+            color: #000;
+            font-weight: 500;
+        }
+        h2{
+            color: #9F9F9F;
+            font-size: 2.4rem;
+            font-weight: 400;
+        }
+    }
+    &_content{
+        margin-top: 37px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p{
+            margin-bottom: 30px;
+            width: 1026px;
+            font-size: 1.6rem;
+            color: #9f9f9f;
+        }
+    }
+    &_media{
+        margin-top: 6px;
+        display: flex;
+        gap: 29px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
